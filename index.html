@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHAMPEL–TECH</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
+  body {
+    background: #000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 2px solid #fff;
+    width: min(80vw, 80vh * 1.333);
+    aspect-ratio: 4 / 3;
+  }
+
+  .cell {
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .symbol {
+    color: #fff;
+    font-size: clamp(20px, 14vw, 20vh);
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="grid">
+  <div class="cell"><span class="symbol">C</span></div>
+  <div class="cell"><span class="symbol">H</span></div>
+  <div class="cell"><span class="symbol">A</span></div>
+  <div class="cell"><span class="symbol">M</span></div>
+  <div class="cell"><span class="symbol">P</span></div>
+  <div class="cell"><span class="symbol">E</span></div>
+  <div class="cell"><span class="symbol">L</span></div>
+  <div class="cell"><span class="symbol">–</span></div>
+  <div class="cell"><span class="symbol">T</span></div>
+  <div class="cell"><span class="symbol">E</span></div>
+  <div class="cell"><span class="symbol">C</span></div>
+  <div class="cell"><span class="symbol">H</span></div>
+</div>
+
+</body>
+</html>
